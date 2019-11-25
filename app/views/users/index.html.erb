@@ -1,0 +1,11 @@
+<h1> Showing 2 random Users </h1>
+
+<ul>
+<% @users.each do |user| %>
+  <% if user.selected === "0" %>
+    <li>
+      <%= user.first_name %>
+    </li>
+  <% end %>
+</ul>
+<% end %>
